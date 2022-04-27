@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Token Price Update</title>
+</head>
+<body>
+    <!--Create table here-->
+    <table class = "table is-narrow is-hoverable" id="leaderboard">
+
+        <thead>
+            <tr>
+                <th class="rank"><abbr title="Position">Rank</abbr></th> 
+                <th class="name">Name</th>
+                <th class="symbol">Symbol</th>
+                <th class="price">Price(USD)</th>
+                <th class="market_cap">Market Cap</th>
+                <th class="circulating_supply">Circulating Supply</th>
+                <th class="volume_24h">Volume(24h)</th>
+                <th class="percentage_change_24h">24 %</th>
+            </tr> 
+        </thead>
+        <!--body of the table-->
+        <tbody id="cryptocurrencies">
+        </tbody>
+
+    </table>
+
+
+
+<!--api-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<!--File with de data of the api we r gonna use(fetching de data from the api)-->
+<script src="./crypto.js" defer> </script>
+</body>
+</html>
